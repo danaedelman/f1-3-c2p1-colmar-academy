@@ -1,0 +1,651 @@
+/* Universal Styles */
+/* font-family: 'Hind', sans-serif;
+font-family: 'Yantramanav', sans-serif; */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  /* font-family: 'Hind', sans-serif; */
+  color: #717275;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #4b4e4f;
+}
+
+span,
+p {
+  color: #949496;
+}
+
+.container {
+  color: #4b4e4f;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4e4f;
+}
+
+a:hover {
+  text-shadow: 1px 1px 1px darkgray;
+}
+
+.container h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+  color: #4b4e4f;
+}
+
+.container span {
+  font-size: .90rem;
+}
+
+
+/*  Header */
+
+header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 64px;
+  align-items: center;
+}
+
+header img {
+  height: 32px;
+}
+
+.company {
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.name {
+  padding-top: 6px;
+}
+
+.colmar{
+  color: #4b4e4f;
+  padding-left: .20rem;
+}
+
+.academy {
+    color: #b7bbbc;
+}
+
+
+/*  Nav */
+
+nav ul{
+  display: flex;
+  align-items: center;
+}
+
+nav a:active {
+  background-color: #7fe4e8;
+}
+
+.border {
+  background-color: #7fe4e8;
+  height: 64px;
+  width: 16px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+  header {
+    display: flex;
+  }
+
+  .company {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex: 1;
+  justify-content: space-between;
+}
+
+.mobile-nav a:active {
+  background-color: #7fe4e8;
+}
+
+  .name {
+    display: none;
+  }
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  background-color: #e0e2e5;
+}
+
+.banner-image-container {
+  width: 60%;
+  padding: 32px 0 32px 24px;
+}
+
+.banner-image-container img{
+ width: 100%;
+}
+
+.banner-copy-container {
+  width: 40%;
+  padding-left: 24px;
+  display: flex;
+}
+
+.banner-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding-left: 24px;
+}
+
+.banner-copy h3 {
+  color: #4b4e4f;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.6em;
+}
+
+.button {
+  font-size: 1.5rem;
+  background-color: #4b4e4f;
+  width: 312px;
+  height: 45px;
+  text-align: center;
+}
+
+
+.button a {
+  position: relative;
+  color: white;
+  top: 10px;
+}
+
+.button a:active {
+  color: #514b4b;
+  transition: color 150ms ease-out 50ms;
+
+}
+
+.button:active {
+  background-color: #ededed;
+  transition: background-color 150ms ease-out 23ms;
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    display: block;
+    background-color: #e0e2e5;
+  }
+
+  .banner-image-container {
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .banner-copy-container {
+    width: 100%;
+    padding: 32px 16px;
+  }
+
+  .banner-copy {
+    width: 100%;
+    padding: 0 26px 0 0;
+  }
+
+
+  .button {
+    font-size: 1.5rem;
+    background-color: #4b4e4f;
+    width: 99.15%;
+}
+
+}
+
+
+/* Information Section */
+
+.info {
+  display: flex;
+}
+
+.practicing {
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+  border-right: 1px solid #edeeef;
+}
+
+.practicing img {
+  width: 100%;
+  height: 100;
+}
+
+.practicing h1 {
+  padding: 32px 0 24px 0;
+}
+
+.practicing p {
+  font-weight: 300;
+  line-height: 1.5em;
+  padding-bottom: 32px;
+
+}
+
+.practicing span {
+  font-size: .85rem;
+  font-weight: bold;
+}
+
+
+/* Information Module Section  */
+
+.info-modules {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 34px;
+}
+
+
+.module {
+  display: flex;
+  padding: 16px;
+  width: 100%;
+}
+
+.module img {
+  width: 35%;
+  height: 100%;
+}
+
+.module-copy {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.campus {
+  border-top: double  #edeeef;
+
+}
+
+.orientation {
+   padding-top: 32px;
+}
+
+
+.module-copy span {
+  padding-bottom: 8px;
+  line-height: 1.4rem;
+}
+
+.read-more a{
+  color: #4286f4;
+}
+
+.read-more a:hover {
+  text-shadow: .25px .25px .25px #2a368e;
+}
+
+.lecture {
+  background-color: #e0e2e5;
+}
+
+.info-mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 480px){
+
+
+
+.practicing {
+  display: none;
+}
+
+.info-modules {
+  display: none;
+}
+
+.info-mobile {
+  display: block;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edeeef;
+}
+
+.module-mobile {
+  padding: 16px;
+}
+
+.module-mobile img {
+  width: 100%;
+}
+
+.module-mobile-copy {
+  padding-left: 16px;
+  padding-top: 16px;
+  line-height: 1.4rem;
+}
+
+.module-mobile h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b4e4f;
+}
+
+
+.module-mobile span {
+  line-height: 1.4rem;
+}
+
+.module-mobile .read-more {
+  padding-top: 8px;
+
+}
+}
+
+
+
+/* Start Learning */
+
+.learning {
+  background-color: #edeeef;
+}
+
+.learning h1 {
+  text-align: center;
+  padding: 32px 0;
+}
+
+
+.classes-container {
+  display: flex;
+  padding-bottom: 32px;
+}
+
+
+.classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-bottom: 16px;
+  background-color: white;
+  margin: 12px;
+}
+
+.class-row2 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-bottom: 16px;
+  background-color: white;
+  margin: 12px;
+}
+
+.class img, .class-row2 img {
+width: 100%;
+}
+
+.class h3, .class-row2 h3{
+  padding: 16px;
+}
+
+.class span, .class-row2 span{
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+
+.class-desc {
+  line-height: 1.4rem;
+
+}
+
+/* start learning mobile  */
+
+@media only screen and (max-width: 480px){
+
+
+  .classes-container {
+    display: block;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #edeeef;
+    width: 100%;
+
+  }
+
+  .learning {
+    background-color: white;
+  }
+
+  .learning h1 {
+    text-align: center;
+    padding: 32px 0 16px 0;
+  }
+
+
+ .class img,
+ .class-row2 img {
+    display: none;
+}
+
+.class span, .class-row2 span{
+  display: none;
+}
+
+ .classes {
+  display: block;
+  padding: 0  16px 0 16px;
+
+
+}
+
+ .class {
+  background-color: #edeeef;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 8px 0;
+
+}
+
+ .class-row2 {
+  width: 100%;
+  background-color: #edeeef;
+  margin: 0 0 8px 0;
+  padding: 0;
+
+}
+
+
+  .class h3, .class-row2 h3{
+    padding: 16px 0 24px 16px;
+}
+
+}
+
+
+
+/* Thesis Exhibit */
+
+
+.thesis-title {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.exhibit {
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.thesis {
+  width: 60%;
+}
+
+
+video {
+  width: 100%;
+}
+
+
+.thesis-copy h3 {
+  padding: 24px 0;
+}
+
+.thesis-copy span {
+  line-height: 1.4rem;
+}
+
+
+/*  Thesis module section */
+
+
+
+.thesis-modules {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 24px;
+}
+
+.exhibit-module {
+  display: flex;
+}
+.thesis-modules img {
+  width: 35%;
+  height: 100%;
+  padding: 16px;
+}
+
+.module1 {
+  background-color: #e0e2e5;
+}
+
+
+.exhibit-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.exhibit-copy span {
+  line-height: 1.4rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .exhibit {
+    display: block;
+    padding-left: 0;
+    padding-bottom: 32px;
+  }
+
+  .thesis-title {
+    text-align: center;
+    padding: 32px 0 16px 0;
+  }
+
+
+  .thesis {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+
+  .thesis-modules {
+    display: none;
+  }
+
+  .thesis-copy {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  border-top: 1px solid #edeeef;
+  padding-bottom: 52px;
+}
+
+footer span {
+  padding: 16px 24px;
+}
+
+footer nav {
+  display: flex;
+  padding-right: 24px;
+}
+
+footer ul li{
+  padding-left: 12px;
+
+}
+
+footer a {
+  color: #949496;
+  font-size: .90rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    padding-bottom: 16px;
+    border-top: none;
+  }
+
+  footer nav {
+    display: none;
+  }
+
+  footer span {
+    padding: 16px 35px;
+  }
+
+}
